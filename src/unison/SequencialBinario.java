@@ -14,7 +14,7 @@ public class SequencialBinario {
         for(int i=1; i<= 100; i++) {
             int pos = (i * Vendor.RECORD_LEN) - Vendor.RECORD_LEN;
             vendor = randomFile.read(pos);
-            System.out.println( vendor.getNombre() + ", " + vendor.getZona() );
+            System.out.println( vendor.getNombre() + ", " + vendor.getZona() + ", " + vendor.getMensual());
         }
         long t2 = System.currentTimeMillis();
 

@@ -10,34 +10,36 @@ public class Vendor {
     public static final int MAX_NAME = 35;
     public static final int MAX_ZONE = 15;
 
-    public static final int RECORD_LEN = 62;
+    public static final int RECORD_LEN = 66;
 
     private int codigo;      // 4 bytes
     private String nombre;   // 35 bytes
     private Date fecha;      // 8 bytes, almacenado en long
     private String zona;     // 15 bytes
+    private int mensual; // 4 bytes
 
-    public Vendor(int codigo, String nombre, Date fecha, String zona) {
+
+    public Vendor(int codigo, String nombre, Date fecha, String zona, int mensual) {
         super();
-
-        this.setCodigo(codigo);
-        this.setNombre(nombre);
-        this.setFecha(fecha);
-        this.setZona(zona)  ;
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.fecha = fecha;
+        this.zona = zona;
+        this.mensual = mensual;
     }
 
-    public Vendor(int codigo, String nombre, String fecha, String zona) {
-        super();
-        this.setCodigo(codigo);
-        this.setNombre(nombre);
-        this.setFecha(fecha);
-        this.setZona(zona)  ;
-    }
 
     public Vendor() {
         super();
     }
 
+    public int getMensual() {
+        return mensual;
+    }
+
+    public void setMensual(int mensual) {
+        this.mensual = mensual;
+    }
     public int getCodigo() {
         return codigo;
     }
@@ -114,6 +116,6 @@ public class Vendor {
     public String toString() {
         SimpleDateFormat f = new SimpleDateFormat("dd/MM/yyyy");
         // regresa una cadena en formato CSV
-        return codigo + "," + nombre + "," + f.format(fecha) + "," + zona;
+        return codigo + "," + nombre + "," + f.format(fecha) + "," + zona + "," + mensual;
     }
 }

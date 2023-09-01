@@ -46,6 +46,8 @@ public class CopyCSV {
                 buffer = registroVendedor.getZona().getBytes();
                 datFile.write(buffer);
 
+                datFile.writeInt(registroVendedor.getMensual());
+
             }
             System.out.printf("Done in %d miliseconds\n", System.currentTimeMillis() - time );
         } catch (FileNotFoundException ex) {
@@ -80,6 +82,7 @@ public class CopyCSV {
 
         String fecha = st1.nextToken();
 
+
         Date dob = null;
         try {
             dob = parseDOB(fecha);
@@ -89,6 +92,7 @@ public class CopyCSV {
         }
         v.setFecha(dob);
         v.setZona(st1.nextToken());
+        v.setMensual(Integer.parseInt(st1.nextToken()));
         return v;
     }
 

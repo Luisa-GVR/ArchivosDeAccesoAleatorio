@@ -27,7 +27,6 @@ public class RandomVendorFile {
 
             // ir al ultimo byte
             out.seek(position);
-
             // escribir el codigo
             out.writeInt(v.getCodigo());
 
@@ -44,6 +43,10 @@ public class RandomVendorFile {
             // la cadena con la zona
             buffer = v.getZona().getBytes();
             out.write(buffer);
+
+            //escribir el mensual
+            out.writeInt(v.getMensual());
+
             out.close();
         } catch (IOException ex) {
             Logger.getLogger(RandomVendorFile.class.getName()).log(Level.SEVERE, null, ex);
@@ -71,8 +74,10 @@ public class RandomVendorFile {
             byte[] zonaBytes = new byte[Vendor.MAX_ZONE];
             out.read(zonaBytes);
 
+            int ventaMensual = out.readInt();
+
             vendor = new Vendor(codigo, new String(nameBytes), new Date(dateBytes),
-                    new String(zonaBytes));
+                    new String(zonaBytes), ventaMensual);
             out.close();
 
         } catch (IOException ex) {
@@ -100,8 +105,10 @@ public class RandomVendorFile {
                 byte[] zonaBytes = new byte[Vendor.MAX_ZONE];
                 out.read(zonaBytes);
 
+                int ventaMensual = out.readInt();
+
                 vendors[i] = new Vendor(codigo, new String(nameBytes), new Date(dateBytes),
-                        new String(zonaBytes));
+                        new String(zonaBytes), ventaMensual);
             }
             out.close();
 
@@ -120,7 +127,7 @@ public class RandomVendorFile {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Numero de registro:");
+        System.out.println("Escriba el numero de registro:");
 
         int n = input.nextInt();
 
@@ -130,7 +137,7 @@ public class RandomVendorFile {
         Vendor p = randomFile.read(pos);
         long t2 = System.currentTimeMillis();
         System.out.println(p);
-        System.out.println(t2 - t1);
+        System.out.println(t2 - t1 );
 
     }
 

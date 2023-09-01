@@ -1,23 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d333a4bd-5b68-409f-96f0-d40dc6c95076" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/random.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/unison/CopyCSV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/unison/RandomFileDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/unison/RandomVendorFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/unison/SequencialBinario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/unison/Vendor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/unison/VendorCSVFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendors.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendors.dat" afterDir="false" />
+    <list default="true" id="d333a4bd-5b68-409f-96f0-d40dc6c95076" name="Changes" comment="Codigo inicial">
+      <change afterPath="$PROJECT_DIR$/src/unison/AgregarVendedor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/unison/CopyCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/unison/CopyCSV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/unison/RandomVendorFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/unison/RandomVendorFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/unison/SequencialBinario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/unison/SequencialBinario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/unison/Vendor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/unison/Vendor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors.csv" beforeDir="false" afterPath="$PROJECT_DIR$/vendors.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,20 +25,35 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2UnqbVsR1WbuXcMB3ZwpodyejTK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/angel/IdeaProjects/untitled2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/angel/IdeaProjects/untitled2&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\angel\IdeaProjects\untitled2" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\angel\IdeaProjects\untitled2" />
+      <recent name="C:\Users\angel\IdeaProjects\untitled2\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.RandomVendorFile">
     <configuration name="CopyCSV" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="unison.CopyCSV" />
       <module name="untitled2" />
@@ -61,8 +67,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RandomVendorFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="unison.RandomVendorFile" />
+      <module name="untitled2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="unison.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SequencialBinario" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="unison.SequencialBinario" />
+      <module name="untitled2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="unison.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RandomVendorFile" />
+        <item itemvalue="Application.SequencialBinario" />
         <item itemvalue="Application.CopyCSV" />
       </list>
     </recent_temporary>
@@ -76,6 +110,14 @@
       <option name="presentableId" value="Default" />
       <updated>1693585766992</updated>
     </task>
+    <task id="LOCAL-00001" summary="Codigo inicial">
+      <created>1693586104259</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693586104259</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -88,5 +130,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Codigo inicial" />
+    <option name="LAST_COMMIT_MESSAGE" value="Codigo inicial" />
   </component>
 </project>
