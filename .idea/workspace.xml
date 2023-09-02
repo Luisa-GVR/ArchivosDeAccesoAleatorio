@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d333a4bd-5b68-409f-96f0-d40dc6c95076" name="Changes" comment="Codigo inicial">
-      <change afterPath="$PROJECT_DIR$/src/unison/AgregarVendedor.java" afterDir="false" />
+    <list default="true" id="d333a4bd-5b68-409f-96f0-d40dc6c95076" name="Changes" comment="Editar informacion de los path">
+      <change afterPath="$PROJECT_DIR$/vendors-data.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/unison/CopyCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/unison/CopyCSV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/unison/RandomVendorFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/unison/RandomVendorFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/unison/SequencialBinario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/unison/SequencialBinario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/unison/Vendor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/unison/Vendor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendors.csv" beforeDir="false" afterPath="$PROJECT_DIR$/vendors.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,18 +28,21 @@
     <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2UnqbVsR1WbuXcMB3ZwpodyejTK" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/angel/IdeaProjects/untitled2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/angel/IdeaProjects/untitled2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\angel\IdeaProjects\untitled2" />
@@ -53,7 +52,7 @@
       <recent name="C:\Users\angel\IdeaProjects\untitled2\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AgregarVendedor">
+  <component name="RunManager" selected="Application.SequencialBinario">
     <configuration name="AgregarVendedor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="unison.AgregarVendedor" />
       <module name="untitled2" />
@@ -108,10 +107,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AgregarVendedor" />
-        <item itemvalue="Application.RandomVendorFile" />
         <item itemvalue="Application.SequencialBinario" />
         <item itemvalue="Application.CopyCSV" />
+        <item itemvalue="Application.AgregarVendedor" />
+        <item itemvalue="Application.RandomVendorFile" />
       </list>
     </recent_temporary>
   </component>
@@ -131,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693586104259</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Editar informacion de los path">
+      <created>1693636016093</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1693636016093</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -146,7 +152,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Codigo inicial" />
-    <option name="LAST_COMMIT_MESSAGE" value="Codigo inicial" />
+    <MESSAGE value="Editar informacion de los path" />
+    <option name="LAST_COMMIT_MESSAGE" value="Editar informacion de los path" />
   </component>
 </project>

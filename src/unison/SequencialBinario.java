@@ -1,18 +1,30 @@
 package unison;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Hashtable;
 
 public class SequencialBinario {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         final String dataPath = "vendors-data.dat";
+        final String csvPath = "vendors.csv";
 
         RandomVendorFile randomFile = new RandomVendorFile(dataPath);
         Vendor vendor;
 
+        BufferedReader length = new BufferedReader(new FileReader(csvPath));
+        int tamanio =0;
+
+        while(length.readLine() != null){
+            tamanio++;
+        }
+
+
         long t1 = System.currentTimeMillis();
-        for(int i=1; i<= 100; i++) {
-            int pos = (i * Vendor.RECORD_LEN) - Vendor.RECORD_LEN;
+        for(int i=1; i< tamanio-1; i++) {
+            int pos = i * Vendor.RECORD_LEN;
             vendor = randomFile.read(pos);
             System.out.println( vendor.getNombre() + ", " + vendor.getZona() + ", " + vendor.getMensual());
         }
@@ -20,7 +32,7 @@ public class SequencialBinario {
 
         long rt1 = t2 - t1;
 
-        Vendor vendorArray[] = new Vendor[100];
+        Vendor vendorArray[] = new Vendor[tamanio-1];
 
         t1 = System.currentTimeMillis();
 
