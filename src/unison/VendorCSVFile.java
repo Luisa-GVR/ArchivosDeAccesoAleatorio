@@ -71,6 +71,7 @@ public class VendorCSVFile {
         String fecha = st1.nextToken();
 
         Date dob = null;
+
         try {
             dob = parseDOB(fecha);
         } catch (ParseException e) {
@@ -78,11 +79,13 @@ public class VendorCSVFile {
         }
         v.setFecha(dob);
         v.setZona(st1.nextToken());
+        v.setMensual(Integer.parseInt(st1.nextToken()));
+
         return v;
     }
 
     public static void main(String[] args) {
-        final String fileName = "vendors.csv";
+        final String fileName = "ArchivosDeAccesoAleatorio-master/src/vendors.csv";
         //final String fileName = "D:\\data\\vendors-data.csv";
 
         VendorCSVFile csvFile = new VendorCSVFile(fileName);
@@ -92,11 +95,9 @@ public class VendorCSVFile {
         System.out.println("Numero de empleado:");
 
         int codigoEmpleado = input.nextInt();
-        long t1 = System.currentTimeMillis();
         Vendor p = csvFile.find( codigoEmpleado );
-        long t2 = System.currentTimeMillis();
         System.out.println(p);
-        System.out.println(t2-t1);
+
     }
 
 
