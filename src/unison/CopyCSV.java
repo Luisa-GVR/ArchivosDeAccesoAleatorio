@@ -8,13 +8,15 @@ import java.util.StringTokenizer;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import static unison.Vendor.MAX_NAME;
+import static unison.Vendor.RECORD_LEN;
+
 public class CopyCSV {
     public static void main(String args[]) {
 
-        final String dataPath = "vendors-data.dat";
-        final String csvPath = "vendors.csv";
-        // final String csvPath =  "D:\\data\\vendorsata.csv";
-        //final String dataPath = "D:\\data\\vendors-data.dat";
+        final String dataPath = "ArchivosDeAccesoAleatorio-master/src/vendors-data.dat";
+        final String csvPath = "ArchivosDeAccesoAleatorio-master/src/vendors.csv";
+
         BufferedReader csvFile = null;
         RandomAccessFile datFile = null;
         try {
@@ -35,18 +37,19 @@ public class CopyCSV {
 
                 registroVendedor = parseRecord(record);
 
-                datFile.writeInt( registroVendedor.getCodigo() );
+                datFile.writeInt( registroVendedor.getCodigo() );// numero
 
                 buffer = registroVendedor.getNombre().getBytes();
-                datFile.write(buffer);
+                datFile.write(buffer); // nombre
+
 
                 long dob = registroVendedor.getFecha().getTime();
-                datFile.writeLong(dob);
+                datFile.writeLong(dob); //fecha
 
                 buffer = registroVendedor.getZona().getBytes();
-                datFile.write(buffer);
+                datFile.write(buffer); // zona
 
-                datFile.writeInt(registroVendedor.getMensual());
+                datFile.writeInt(registroVendedor.getMensual()); //mensual
 
             }
             System.out.printf("Done in %d miliseconds\n", System.currentTimeMillis() - time );
