@@ -85,8 +85,7 @@ public class VendorCSVFile {
     }
 
     public static void main(String[] args) {
-        final String fileName = "ArchivosDeAccesoAleatorio-master/src/vendors.csv";
-        //final String fileName = "D:\\data\\vendors-data.csv";
+        final String fileName = "vendors.csv";
 
         VendorCSVFile csvFile = new VendorCSVFile(fileName);
 

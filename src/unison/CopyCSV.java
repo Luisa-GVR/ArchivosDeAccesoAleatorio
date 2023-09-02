@@ -14,8 +14,8 @@ import static unison.Vendor.RECORD_LEN;
 public class CopyCSV {
     public static void main(String args[]) {
 
-        final String dataPath = "ArchivosDeAccesoAleatorio-master/src/vendors-data.dat";
-        final String csvPath = "ArchivosDeAccesoAleatorio-master/src/vendors.csv";
+        final String dataPath = "vendors-data.dat";
+        final String csvPath = "vendors.csv";
 
         BufferedReader csvFile = null;
         RandomAccessFile datFile = null;

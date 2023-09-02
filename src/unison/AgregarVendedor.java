@@ -9,8 +9,8 @@ import java.util.Scanner;
 public class AgregarVendedor {
     public static void main(String[] args) throws ParseException, IOException {
         Scanner sc = new Scanner(System.in);
-        final String dataPath = "ArchivosDeAccesoAleatorio-master/src/vendors-data.dat";
-        final String csvPath = "ArchivosDeAccesoAleatorio-master/src/vendors.csv";
+        final String dataPath = "vendors-data.dat";
+        final String csvPath = "vendors.csv";
 
         System.out.println("Inserta el nombre");
         String nombreNuevo = sc.nextLine();

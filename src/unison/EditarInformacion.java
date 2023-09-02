@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class EditarInformacion {
     public static void main(String[] args) throws ParseException, FileNotFoundException {
 
-        final String csvPath = "ArchivosDeAccesoAleatorio-master/src/vendors.csv";
+        final String csvPath = "vendors.csv";
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Escribe el numero de empleado");

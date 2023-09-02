@@ -121,7 +121,7 @@ public class RandomVendorFile {
 
     public static void main(String[] args) {
 
-        final String dataPath = "ArchivosDeAccesoAleatorio-master/src/vendors-data.dat";
+        final String dataPath = "vendors-data.dat";
 
         RandomVendorFile randomFile = new RandomVendorFile(dataPath);
 

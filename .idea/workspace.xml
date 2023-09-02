@@ -53,7 +53,20 @@
       <recent name="C:\Users\angel\IdeaProjects\untitled2\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RandomVendorFile">
+  <component name="RunManager" selected="Application.AgregarVendedor">
+    <configuration name="AgregarVendedor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="unison.AgregarVendedor" />
+      <module name="untitled2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="unison.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CopyCSV" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="unison.CopyCSV" />
       <module name="untitled2" />
@@ -95,6 +108,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AgregarVendedor" />
         <item itemvalue="Application.RandomVendorFile" />
         <item itemvalue="Application.SequencialBinario" />
         <item itemvalue="Application.CopyCSV" />
