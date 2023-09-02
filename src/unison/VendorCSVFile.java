@@ -46,6 +46,28 @@ public class VendorCSVFile {
 
         return x;
     }
+    public String findZone(String zone) {
+        String lookFor = zone.toLowerCase(); // Convert the search term to lowercase
+        String dataSearch = "";
+        String record = null;
+        try {
+            BufferedReader in = new BufferedReader(new FileReader(fileName));
+            while ((record = in.readLine()) != null) {
+                if (record.toLowerCase().contains(lookFor)) { // Convert the CSV line to lowercase for comparison
+                    dataSearch += record + "\n";
+                }
+            }
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(VendorCSVFile.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(VendorCSVFile.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+
+
+
+        return dataSearch;
+    }
 
     private Date parseDOB(String d) throws ParseException {
         int len = d.length();

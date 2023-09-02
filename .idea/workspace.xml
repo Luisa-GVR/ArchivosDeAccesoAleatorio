@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d333a4bd-5b68-409f-96f0-d40dc6c95076" name="Changes" comment="Editar informacion de los path">
-      <change afterPath="$PROJECT_DIR$/vendors-data.dat" afterDir="false" />
+    <list default="true" id="d333a4bd-5b68-409f-96f0-d40dc6c95076" name="Changes" comment="Creacion BuscarZona">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/unison/SequencialBinario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/unison/SequencialBinario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/unison/BuscarZona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/unison/BuscarZona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/unison/VendorCSVFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/unison/VendorCSVFile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,9 +52,22 @@
       <recent name="C:\Users\angel\IdeaProjects\untitled2\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SequencialBinario">
+  <component name="RunManager" selected="Application.BuscarZona">
     <configuration name="AgregarVendedor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="unison.AgregarVendedor" />
+      <module name="untitled2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="unison.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BuscarZona" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="unison.BuscarZona" />
       <module name="untitled2" />
       <extension name="coverage">
         <pattern>
@@ -107,6 +120,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BuscarZona" />
         <item itemvalue="Application.SequencialBinario" />
         <item itemvalue="Application.CopyCSV" />
         <item itemvalue="Application.AgregarVendedor" />
@@ -137,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693636016093</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Creacion BuscarZona">
+      <created>1693636883472</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1693636883472</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -155,6 +176,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Codigo inicial" />
     <MESSAGE value="Editar informacion de los path" />
-    <option name="LAST_COMMIT_MESSAGE" value="Editar informacion de los path" />
+    <MESSAGE value="Creacion BuscarZona" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creacion BuscarZona" />
   </component>
 </project>
