@@ -52,31 +52,7 @@ public class AgregarVendedor {
 
         //escribir en el dat
 
-        BufferedReader csvFile = null;
-        RandomAccessFile datFile = null;
-        try {
-            csvFile = new BufferedReader(new FileReader(csvPath));
+        CopyCSV.main(new String[]{});
 
-            // archivo binario
-            datFile = new RandomAccessFile(dataPath, "rws");
-
-            String record = null;
-            byte buffer[] = null;
-
-            csvFile.readLine();
-
-            long time = System.currentTimeMillis();
-
-            while ((record = csvFile.readLine()) != null) {
-                datFile.writeInt(veCodven);// numero
-                datFile.write(nombreNuevo.getBytes()); // nombre
-                datFile.writeLong(fechaPasar); //fecha
-                datFile.write(ciudad.getBytes()); // zona
-                datFile.writeInt(ventaMensual); //mensual
-
-            }
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
     }
 }
